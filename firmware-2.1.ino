@@ -131,14 +131,14 @@ void do_send(osjob_t *j) {
     power = current * voltage;
   // ========================================================================================================
   // --- Isolation Control ---     
-    if(current > 0.05){           
+    if(current > 0.25){           
       current = current;
       status = true;
     }else{
       current=0.0;
       status = false;
     }            
-    if(current > 0.05){ //obs 
+    if(current > 0.25){ //obs 
       power = power;
     }else{
       power=0.0;
